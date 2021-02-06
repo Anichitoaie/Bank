@@ -197,7 +197,7 @@ while loop:
                 conf_username = input("Please insert username to log in:")
                 conf_password = input("Please insert password to log in:")
                 for i in range(user_count):
-                    if conf_username in user_array[i].user_name and conf_password in user_array[i].password:
+                    if conf_username in user_array[i].user_name and conf_password in user_array[i].password and conf_password !='':
                         print("login successfully")
                         login_succes=True
                         s2 = 0

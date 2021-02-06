@@ -12,7 +12,8 @@ def get_function_parameters_and_values():
 
 def add(a,b):
     sum=a+b
-    logging.info('call function ' + get_function_name() + '(' + str(get_function_parameters_and_values()) + ')-->')
+    logging.info('call function ' + str(get_function_name())+ '(' + str(get_function_parameters_and_values()) + ')-->'+str(sum))
+
     return sum
 
 
@@ -23,3 +24,5 @@ logging.basicConfig(filename='example.log', level=logging.DEBUG,format='%(asctim
                             datefmt='%m-%d-%Y %H:%M:%S')
 
 logging.debug(add(a,b))
+
+
